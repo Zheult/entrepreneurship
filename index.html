@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title>თბილისის მეწარმოების ხელშეწყობის ცენტრი</title>
+<!-- Normalize CSS -->
+<link rel="stylesheet" href="/assets/bower_components/foundation/css/normalize.min.css"/>
+<!-- Zurb Foundation -->
+<link rel="stylesheet" href="/assets/bower_components/foundation/css/foundation.min.css"/>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/css/font-awesome.min.css"/>
+<!-- Application -->
+<link rel="stylesheet" href="/assets/css/app.min.css"/>
+<!-- Modernizr -->
+<script src="/assets/bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+<header class="clearfix">
+    <p>თბილისის მეწარმოების ხელშეწყობის ცენტრი</p>
+    <ul class="inline-list languages-switch">
+        <li>
+            <a href="javascript:void(0);" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><i class="fa fa-user"></i> სახელი გვარი <i class="fa fa-caret-down"></i></a>
+            <ul class="f-dropdown" id="drop1" tabindex="-1" aria-hidden="true" data-dropdown-content>
+                <li><a href="#" onclick="showTab('#my-account', '#personal-info');">პირადი ინფორმაცია</a></li>
+                <li><a href="#" onclick="showTab('#my-account', '#applications');">აპლიკაციები</a></li>
+                <li><a href="#" onclick="showTab('#my-account', '#notifications');">შეტყობინებები</a></li>
+            </ul>
+        </li>
+        <li><a href="#">ავტორიზაცია</a></li>
+        <li><a href="#" onclick="showTab('#registration', '#individual');">რეგისტრაცია</a></li>
+        <li class="active"><a href="#">geo</a></li>
+        <li><a href="#">eng</a></li>
+        <li><a href="#">rus</a></li>
+    </ul>
+</header>
+<div class="left-header">
+    <h1>საქმიანი ტურიზმი</h1>
+</div>
+<section id="slider">
+    <div class="slide-item visible">
+        <img src="/assets/images/backgrounds/1.jpg"/>
+    </div>
+    <div class="slide-item">
+        <img src="/assets/images/backgrounds/2.jpg"/>
+    </div>
+    <a href="full.html" class="animated-link"></a>
+</section>
+<div id="registration">
+    <a href="javascript:void(0);" class="close-btn"><i class="fa fa-close"></i></a>
+    <ul class="tabs" data-tab>
+        <li class="tab-title active"><a href="#individual">ფიზიკური პრირი</a></li>
+        <li class="tab-title"><a href="#legal">იურიდიული პირი</a></li>
+    </ul>
+    <div class="tabs-content">
+        <div class="content active" id="individual">
+            <form>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="სახელი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="ტელეფონი"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="გვარი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="ეფ-ფოსტა"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="პირადი ნომერი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="მომხმარებლის სახელი"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="მისამართი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="პაროლი"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="მობილური"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="გაიმეორეთ პაროლი"/>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="button small"><i class="fa fa-edit"></i> რეგისტრაცია</button>
+                </div>
+            </form>
+        </div>
+        <div class="content" id="legal">
+            <form>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="სახელი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="პირადი ნომერი"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="გვარი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="მობილური"/>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="საიდენტიფიკაციო კოდი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="ელ-ფოსტა"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="ორგანიზაციის სახელწოდება"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="მომხმარებლის სახელი"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="ორგანიზაციის ტელეფონი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="პაროლი"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="იურიდიული მისამართი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="გაიმეორეთ პაროლი"/>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="button small"><i class="fa fa-edit"></i> რეგისტრაცია</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="my-account">
+    <a href="javascript:void(0);" class="close-btn"><i class="fa fa-close"></i></a>
+    <ul class="tabs" data-tab>
+        <li class="tab-title"><a href="#personal-info">პირადი ინფორმაცია</a></li>
+        <li class="tab-title active"><a href="#applications">აპლიკაციები</a></li>
+        <li class="tab-title"><a href="#notifications">შეტყობინებები</a></li>
+    </ul>
+    <div class="tabs-content">
+        <div class="content" id="personal-info">
+            <form>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="სახელი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="პირადი ნომერი"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="გვარი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="მობილური"/>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="საიდენტიფიკაციო კოდი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="ელ-ფოსტა"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="ორგანიზაციის დასახელება"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="მომხმარებლის სახელი"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="ორგანიზაციის ტელეფონი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="პაროლი"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="იურიდიული მისამართი"/>
+                    </div>
+                    <div class="large-6 columns">
+                        <input type="text" placeholder="გაიმეორეთ პაროლი"/>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="button small"><i class="fa fa-edit"></i> რედაქტირება</button>
+                </div>
+            </form>
+        </div>
+        <div class="content active" id="applications">
+            <form>
+                <div class="row">
+                    <div class="large-5 columns">
+                        <input type="text" placeholder="დოკუმენტის ნომერი"/>
+                    </div>
+                    <div class="large-2 columns">
+                        <select title="">
+                            <option value="">დან</option>
+                        </select>
+                    </div>
+                    <div class="large-2 columns">
+                        <select title="">
+                            <option value="">მდე</option>
+                        </select>
+                    </div>
+                    <div class="large-3 columns">
+                        <select title="">
+                            <option value="">სტატუსი</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <input type="text" placeholder="საძიებო სიტყბა"/>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="button-circle"><i class="fa fa-search fa-fw"></i></button>
+                </div>
+            </form>
+        </div>
+        <div class="content" id="notifications">
+            <form>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label>Input Label
+                            <input type="text" placeholder="large-12.columns"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-4 columns">
+                        <label>Input Label
+                            <input type="text" placeholder="large-4.columns"/>
+                        </label>
+                    </div>
+                    <div class="large-4 columns">
+                        <label>Input Label
+                            <input type="text" placeholder="large-4.columns"/>
+                        </label>
+                    </div>
+                    <div class="large-4 columns">
+                        <div class="row collapse">
+                            <label>Input Label</label>
+                            <div class="small-9 columns">
+                                <input type="text" placeholder="small-9.columns"/>
+                            </div>
+                            <div class="small-3 columns">
+                                <span class="postfix">.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label>Select Box
+                            <select>
+                                <option value="husker">Husker</option>
+                                <option value="starbuck">Starbuck</option>
+                                <option value="hotdog">Hot Dog</option>
+                                <option value="apollo">Apollo</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <label>Choose Your Favorite</label>
+                        <input type="radio" name="pokemon" value="Red" id="pokemonRed3"><label for="pokemonRed3">Red</label>
+                        <input type="radio" name="pokemon" value="Blue" id="pokemonBlue3"><label for="pokemonBlue3">Blue</label>
+                    </div>
+                    <div class="large-6 columns">
+                        <label>Check these out</label>
+                        <input id="checkbox5" type="checkbox"><label for="checkbox5">Checkbox 1</label>
+                        <input id="checkbox6" type="checkbox"><label for="checkbox6">Checkbox 2</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label>Textarea Label
+                            <textarea placeholder="small-12.columns"></textarea>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- jQuery -->
+<script src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Zurb Foundation -->
+<script src="/assets/bower_components/foundation/js/foundation.min.js"></script>
+<!-- imgLiquid -->
+<script src="/assets/bower_components/imgLiquid/js/imgLiquid-min.js"></script>
+<!-- Slider -->
+<script src="/assets/js/slider.js"></script>
+<!-- Application -->
+<script src="/assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "assets",
+  "version": "0.0.1",
+  "authors": [
+    "Zheult <zheult@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Zheult",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "4.4.0",
+    "foundation": "5.5.2",
+    "imgLiquid": "~0.9.944",
+    "jquery": "2.1.4"
+  }
+}

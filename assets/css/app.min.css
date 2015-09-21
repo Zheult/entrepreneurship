@@ -1,0 +1,729 @@
+@font-face {
+  font-family: 'bpg_mrgvlovani';
+  src: url('../fonts/bpg_mrgvlovani_2009/bpg_mrgvlovani_2009.eot');
+  src: url('../fonts/bpg_mrgvlovani_2009/bpg_mrgvlovani_2009.eot?#iefix') format('embedded-opentype'), url('../fonts/bpg_mrgvlovani_2009/bpg_mrgvlovani_2009.woff') format('woff'), url('../fonts/bpg_mrgvlovani_2009/bpg_mrgvlovani_2009.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bpg_mrgvlovani_caps';
+  src: url('../fonts/bpg_mrgvlovani_caps/bpg_mrgvlovani_caps.eot');
+  src: url('../fonts/bpg_mrgvlovani_caps/bpg_mrgvlovani_caps.eot?#iefix') format('embedded-opentype'), url('../fonts/bpg_mrgvlovani_caps/bpg_mrgvlovani_caps.woff') format('woff'), url('../fonts/bpg_mrgvlovani_caps/bpg_mrgvlovani_caps.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 21, C:\Apache24\htdocs\assets\less\fonts.less */
+.bpg-mrgvlovani {
+  font-family: bpg_mrgvlovani, sans-serif;
+}
+/* line 25, C:\Apache24\htdocs\assets\less\fonts.less */
+.bpg-mrgvlovani-caps {
+  font-family: bpg_mrgvlovani_caps, sans-serif;
+}
+/* line 4, C:\Apache24\htdocs\assets\less\app.less */
+html * {
+  outline: 0 !important;
+}
+/* line 8, C:\Apache24\htdocs\assets\less\app.less */
+body {
+  position: relative;
+  padding-top: 60px;
+}
+/* line 13, C:\Apache24\htdocs\assets\less\app.less */
+textarea {
+  resize: none;
+}
+/* line 17, C:\Apache24\htdocs\assets\less\app.less */
+select {
+  font-family: bpg_mrgvlovani, sans-serif;
+}
+/* line 21, C:\Apache24\htdocs\assets\less\app.less */
+::-webkit-input-placeholder {
+  color: #a1a1a1;
+  font-family: bpg_mrgvlovani, sans-serif;
+}
+/* line 26, C:\Apache24\htdocs\assets\less\app.less */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #a1a1a1;
+  font-family: bpg_mrgvlovani, sans-serif;
+}
+/* line 32, C:\Apache24\htdocs\assets\less\app.less */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #a1a1a1;
+  font-family: bpg_mrgvlovani, sans-serif;
+}
+/* line 38, C:\Apache24\htdocs\assets\less\app.less */
+:-ms-input-placeholder {
+  color: #a1a1a1;
+  font-family: bpg_mrgvlovani, sans-serif;
+}
+/* line 43, C:\Apache24\htdocs\assets\less\app.less */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  background-color: #fff;
+  font-family: bpg_mrgvlovani, sans-serif;
+  z-index: 1030;
+}
+/* line 54, C:\Apache24\htdocs\assets\less\app.less */
+header p,
+header ul.languages-switch {
+  line-height: 60px;
+}
+/* line 59, C:\Apache24\htdocs\assets\less\app.less */
+header p {
+  float: left;
+  margin-bottom: 0;
+  color: #ccc;
+  font-size: 14px;
+}
+/* line 66, C:\Apache24\htdocs\assets\less\app.less */
+header ul.languages-switch {
+  float: right;
+  margin-bottom: 0;
+}
+/* line 71, C:\Apache24\htdocs\assets\less\app.less */
+header ul.languages-switch li a {
+  font-size: 12px;
+  color: #cccccc;
+  text-transform: uppercase;
+  -webkit-transition: color .4s;
+  -moz-transition: color .4s;
+  -ms-transition: color .4s;
+  -o-transition: color .4s;
+  transition: color .4s;
+}
+/* line 83, C:\Apache24\htdocs\assets\less\app.less */
+header ul.languages-switch li a:focus,
+header ul.languages-switch li a:hover,
+header ul.languages-switch li.active a {
+  color: #8c8c8c;
+}
+/* line 92, C:\Apache24\htdocs\assets\less\app.less */
+footer {
+  padding: 20px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+/* line 97, C:\Apache24\htdocs\assets\less\app.less */
+footer a {
+  display: inline-block;
+}
+/* line 101, C:\Apache24\htdocs\assets\less\app.less */
+footer a i.fa-twitter {
+  color: #29c5f6;
+}
+/* line 105, C:\Apache24\htdocs\assets\less\app.less */
+footer a i.fa-google-plus {
+  color: #e75c3c;
+}
+/* line 109, C:\Apache24\htdocs\assets\less\app.less */
+footer a i.fa-facebook {
+  color: #6788ce;
+}
+/* line 114, C:\Apache24\htdocs\assets\less\app.less */
+footer a + a {
+  margin-left: 40px;
+}
+/* line 120, C:\Apache24\htdocs\assets\less\app.less */
+.left-header {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+/* line 125, C:\Apache24\htdocs\assets\less\app.less */
+.left-header h1 {
+  margin: 0;
+  height: 60px;
+  line-height: 40px;
+  position: relative;
+  padding: 10px 20px 10px 10vw;
+  font-family: bpg_mrgvlovani_caps, sans-serif;
+  font-size: 24px;
+  background-color: #24a692;
+  color: #fff;
+  z-index: 1;
+  opacity: .8;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 144, C:\Apache24\htdocs\assets\less\app.less */
+.left-header h1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -80px;
+  border-style: solid;
+  border-width: 60px 0 0 80px;
+  border-color: transparent transparent transparent #24a692;
+}
+/* line 156, C:\Apache24\htdocs\assets\less\app.less */
+#navigation h2,
+.middle-links h3 {
+  position: relative;
+  margin: 0;
+  padding: 8px 0;
+  font-family: bpg_mrgvlovani_caps, sans-serif;
+  font-size: 1.2vw;
+  border-bottom: 2px solid transparent;
+}
+/* line 165, C:\Apache24\htdocs\assets\less\app.less */
+#navigation h2 a,
+.middle-links h3 a {
+  color: #fff;
+  display: block;
+}
+/* line 173, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .open h2:after,
+.middle-links h3:after,
+#navigation .open h2:before,
+.middle-links h3:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  border-style: solid;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* line 187, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .open h2:before,
+.middle-links h3:before {
+  bottom: -15px;
+  border-width: 15px 30px 0 30px;
+  z-index: 3;
+}
+/* line 193, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .open h2:after,
+.middle-links h3:after {
+  bottom: -20px;
+  border-width: 20px 30px 0 30px;
+  z-index: 2;
+}
+/* line 200, C:\Apache24\htdocs\assets\less\app.less */
+#navigation {
+  margin: 30px 0;
+  text-align: center;
+}
+/* line 204, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .navigation__accordion {
+  height: 0;
+  overflow: hidden;
+}
+/* line 209, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .columns a {
+  font-family: bpg_mrgvlovani_caps, sans-serif;
+  font-size: 1vmax;
+  -webkit-transition: color .2s;
+  -moz-transition: color .2s;
+  -ms-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s;
+}
+/* line 219, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .columns a i {
+  width: 6vmax;
+  height: 6vmax;
+  line-height: 6vmax;
+  font-size: 2vmax;
+  background-color: #fff;
+  border: 3px solid transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: -webkit-box-shadow 0.4s;
+  -moz-transition: -moz-box-shadow 0.4s;
+  -ms-transition: box-shadow 0.4s;
+  -o-transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+}
+/* line 238, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .columns a span {
+  display: block;
+  margin-top: 14px;
+}
+/* line 243, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .columns a:hover {
+  color: #fff !important;
+}
+/* line 248, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .about {
+  background-color: #5fc4b4;
+}
+/* line 251, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .about h2 {
+  background-color: #24a692;
+  border-bottom-color: #187a6b;
+}
+/* line 255, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .about h2:before {
+  border-color: #24a692 transparent transparent transparent;
+}
+/* line 259, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .about h2:after {
+  border-color: #187a6b transparent transparent transparent;
+}
+/* line 264, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .about .columns a {
+  color: #146c5e;
+}
+/* line 267, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .about .columns a i {
+  color: #23a490;
+  border: 3px solid #4db5a5;
+}
+/* line 272, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .about .columns a:hover i {
+  -webkit-box-shadow: 0 0 0 0.5vmax rgba(77, 181, 165, 0.8);
+  -moz-box-shadow: 0 0 0 0.5vmax rgba(77, 181, 165, 0.8);
+  box-shadow: 0 0 0 0.5vmax rgba(77, 181, 165, 0.8);
+}
+/* line 280, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .media {
+  background-color: #ee7664;
+}
+/* line 283, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .media h2 {
+  background-color: #d65943;
+  border-bottom-color: #a44839;
+}
+/* line 287, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .media h2:before {
+  border-color: #d65943 transparent transparent transparent;
+}
+/* line 291, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .media h2:after {
+  border-color: #a44839 transparent transparent transparent;
+}
+/* line 296, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .media .columns a {
+  color: #892e20;
+}
+/* line 299, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .media .columns a i {
+  color: #dc533e;
+  border: 3px solid #ea6e5b;
+}
+/* line 304, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .media .columns a:hover i {
+  -webkit-box-shadow: 0 0 0 0.5vmax rgba(223, 111, 94, 0.8);
+  -moz-box-shadow: 0 0 0 0.5vmax rgba(223, 111, 94, 0.8);
+  box-shadow: 0 0 0 0.5vmax rgba(223, 111, 94, 0.8);
+}
+/* line 312, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .row {
+  padding: 50px 0;
+}
+/* line 315, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .row + .row {
+  padding-top: 0;
+}
+/* line 320, C:\Apache24\htdocs\assets\less\app.less */
+#navigation .open .navigation__accordion {
+  height: auto;
+}
+/* line 326, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links h3 {
+  font-family: bpg_mrgvlovani_caps, sans-serif;
+  font-size: 1.2vmin;
+}
+/* line 330, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links h3 a {
+  color: #fff;
+  display: block;
+}
+/* line 336, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-left,
+.middle-links .col-right {
+  width: 50%;
+}
+/* line 340, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-left h3,
+.middle-links .col-right h3 {
+  padding: 18px 0;
+}
+/* line 345, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-left {
+  float: left;
+}
+/* line 348, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-left h3 {
+  text-align: right;
+  padding-right: 15%;
+  background-color: #24a692;
+  border-bottom-color: #187a6b;
+}
+/* line 354, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-left h3:after,
+.middle-links .col-left h3:before {
+  left: auto;
+  right: 35%;
+  -webkit-transform: translateX(35%);
+  -moz-transform: translateX(35%);
+  -ms-transform: translateX(35%);
+  -o-transform: translateX(35%);
+  transform: translateX(35%);
+}
+/* line 365, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-left h3:before {
+  border-color: #24a692 transparent transparent transparent;
+}
+/* line 369, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-left h3:after {
+  border-color: #187a6b transparent transparent transparent;
+}
+/* line 375, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-right {
+  float: right;
+  position: relative;
+}
+/* line 379, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-right h3 {
+  padding-left: 28%;
+  background-color: #d65943;
+  border-bottom-color: #a44839;
+}
+/* line 384, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-right h3:after,
+.middle-links .col-right h3:before {
+  left: 35%;
+}
+/* line 389, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-right h3:before {
+  border-color: #d65943 transparent transparent transparent;
+}
+/* line 393, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-right h3:after {
+  border-color: #a44839 transparent transparent transparent;
+}
+/* line 398, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-right form {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 70%;
+  padding: 30px 10px;
+  background-color: #fff;
+  z-index: 1;
+}
+/* line 408, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-right form label {
+  position: relative;
+}
+/* line 411, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-right form label input {
+  padding-left: 27px;
+}
+/* line 414, C:\Apache24\htdocs\assets\less\app.less */
+.middle-links .col-right form label input + i {
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  z-index: 1;
+}
+/* line 426, C:\Apache24\htdocs\assets\less\app.less */
+#map {
+  height: 20vmax;
+  margin-bottom: 30px;
+}
+/* line 431, C:\Apache24\htdocs\assets\less\app.less */
+.space {
+  height: 120px;
+  margin-top: 30px;
+  background-color: #f7f7f7;
+}
+/* line 437, C:\Apache24\htdocs\assets\less\app.less */
+#my-account,
+#registration {
+  display: none;
+  min-width: 60%;
+  position: absolute;
+  top: 60px;
+  right: 114px;
+  background-color: #fff;
+}
+/* line 448, C:\Apache24\htdocs\assets\less\app.less */
+#my-account input:focus,
+#registration input:focus,
+#my-account select:focus,
+#registration select:focus {
+  border-color: #24a692;
+}
+/* line 453, C:\Apache24\htdocs\assets\less\app.less */
+#my-account input,
+#registration input {
+  font-size: 11px;
+}
+/* line 457, C:\Apache24\htdocs\assets\less\app.less */
+#my-account .close-btn,
+#registration .close-btn {
+  position: absolute;
+  top: 4px;
+  right: 20px;
+  color: #a3a3a3;
+  font-size: 18px;
+  -webkit-transition: color .4s;
+  -moz-transition: color .4s;
+  -ms-transition: color .4s;
+  -o-transition: color .4s;
+  transition: color .4s;
+}
+/* line 470, C:\Apache24\htdocs\assets\less\app.less */
+#my-account .close-btn:hover,
+#registration .close-btn:hover,
+#my-account .close-btn:focus,
+#registration .close-btn:focus {
+  color: #707070;
+}
+/* line 476, C:\Apache24\htdocs\assets\less\app.less */
+#my-account button,
+#registration button {
+  margin-bottom: 0;
+  background-color: #24a692;
+  font-family: bpg_mrgvlovani_caps, sans-serif;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+/* line 485, C:\Apache24\htdocs\assets\less\app.less */
+#my-account button:hover,
+#registration button:hover,
+#my-account button:focus,
+#registration button:focus {
+  background-color: #1f8d7c;
+}
+/* line 491, C:\Apache24\htdocs\assets\less\app.less */
+#my-account .button-circle,
+#registration .button-circle {
+  padding: 1em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 498, C:\Apache24\htdocs\assets\less\app.less */
+#my-account .button-circle i,
+#registration .button-circle i {
+  width: 22px;
+  height: 20px;
+}
+/* line 505, C:\Apache24\htdocs\assets\less\app.less */
+#my-account .tabs .tab-title > a,
+#registration .tabs .tab-title > a {
+  padding: .5rem 2rem;
+  background-color: #d65943;
+  color: #fff;
+  font-family: bpg_mrgvlovani_caps, sans-serif;
+  font-size: .8em;
+  -webkit-box-shadow: inset 20px 0 20px -20px rgba(0, 0, 0, 0.25), inset -20px 0 20px -20px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 20px 0 20px -20px rgba(0, 0, 0, 0.25), inset -20px 0 20px -20px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 20px 0 20px -20px rgba(0, 0, 0, 0.25), inset -20px 0 20px -20px rgba(0, 0, 0, 0.25);
+}
+/* line 517, C:\Apache24\htdocs\assets\less\app.less */
+#my-account .tabs .tab-title.active > a,
+#registration .tabs .tab-title.active > a {
+  background-color: #f1f1f1;
+  color: #000;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 527, C:\Apache24\htdocs\assets\less\app.less */
+#my-account .tabs-content,
+#registration .tabs-content {
+  margin-top: -1px;
+  margin-bottom: 0;
+  border-top: 1px solid #dadada;
+}
+/* line 532, C:\Apache24\htdocs\assets\less\app.less */
+#my-account .tabs-content > .content,
+#registration .tabs-content > .content {
+  padding: 2em 1em;
+  background-color: #f1f1f1;
+}
+/* line 3, C:\Apache24\htdocs\assets\less\slider.less */
+.cropper-container {
+  display: none;
+}
+/* line 7, C:\Apache24\htdocs\assets\less\slider.less */
+.slider {
+  height: 100%;
+  position: relative;
+}
+/* line 11, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .slides-wrapper {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 16, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .slides-wrapper .slide-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 3s;
+  -moz-transition: all 3s;
+  -ms-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+/* line 37, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .slides-wrapper .slide-item.visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+/* line 50, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation {
+  list-style: none;
+  margin: 0;
+  background-color: #b5493a;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: .8;
+}
+/* line 59, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation li {
+  position: relative;
+  width: 14px;
+  height: 14px;
+}
+/* line 64, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation li a {
+  width: 100%;
+  height: 100%;
+  background-color: #dbd5ad;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+/* line 84, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation a:focus,
+.slider .navigation a:hover,
+.slider .navigation li.active a {
+  background-color: #8c3b30;
+  -webkit-box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+}
+/* line 93, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation:not(.navigation-right) {
+  left: 0;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+}
+/* line 99, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation:not(.navigation-right) li {
+  margin: 0 7px;
+  display: inline-block;
+}
+/* line 105, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation.navigation-right {
+  top: 0;
+  padding-top: 80px;
+  width: 114px;
+  line-height: 1;
+}
+/* line 111, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation.navigation-right li {
+  display: block;
+  margin: 20px auto;
+}
+/* line 118, C:\Apache24\htdocs\assets\less\slider.less */
+.slider a.animated-link {
+  width: 54px;
+  height: 54px;
+  background-color: #7f362b;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  border: 6px solid #b84e3f;
+  z-index: 1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-animation: linkBorder 3s infinite;
+  -o-animation: linkBorder 3s infinite;
+  animation: linkBorder 3s infinite;
+}
+@keyframes linkBorder {
+  /* line 145, C:\Apache24\htdocs\assets\less\slider.less */
+  0%,
+  100% {
+    border-width: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  /* line 153, C:\Apache24\htdocs\assets\less\slider.less */
+  50% {
+    border-width: 9px;
+    -webkit-box-shadow: 0 0 0 9px rgba(146, 62, 50, 0.75);
+    -moz-box-shadow: 0 0 0 9px rgba(146, 62, 50, 0.75);
+    box-shadow: 0 0 0 9px rgba(146, 62, 50, 0.75);
+  }
+}
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+  /* line 10, C:\Apache24\htdocs\assets\less\responsive.less */
+  header p,
+  header ul.languages-switch {
+    float: none;
+    text-align: center;
+  }
+  /* line 16, C:\Apache24\htdocs\assets\less\responsive.less */
+  header ul.languages-switch li {
+    float: none;
+    display: inline-block;
+  }
+  /* line 20, C:\Apache24\htdocs\assets\less\responsive.less */
+  header ul.languages-switch li:first-child {
+    margin-left: 0;
+  }
+}
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 1025px, large screens */
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xxlarge screens */

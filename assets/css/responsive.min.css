@@ -1,0 +1,25 @@
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+  /* line 10, C:\Apache24\htdocs\assets\less\responsive.less */
+  header p,
+  header ul.languages-switch {
+    float: none;
+    text-align: center;
+  }
+  /* line 16, C:\Apache24\htdocs\assets\less\responsive.less */
+  header ul.languages-switch li {
+    float: none;
+    display: inline-block;
+  }
+  /* line 20, C:\Apache24\htdocs\assets\less\responsive.less */
+  header ul.languages-switch li:first-child {
+    margin-left: 0;
+  }
+}
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 1025px, large screens */
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xxlarge screens */

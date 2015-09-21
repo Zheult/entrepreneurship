@@ -1,0 +1,23 @@
+{
+  "name": "assets",
+  "version": "0.0.1",
+  "authors": [
+    "Zheult <zheult@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Zheult",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.5",
+    "bootstrap-treeview": "~1.2.0",
+    "bootswatch": "3.3.5+3",
+    "font-awesome": "4.4.0",
+    "jquery": "2.1.4"
+  }
+}

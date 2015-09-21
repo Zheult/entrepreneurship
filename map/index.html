@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="initial-scale=1.0"/>
+<title>Simple Map</title>
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="assets/bower_components/font-awesome/css/font-awesome.min.css"/>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="assets/bower_components/bootswatch/paper/bootstrap.min.css"/>
+<link rel="stylesheet" href="assets/bower_components/bootstrap-treeview/dist/bootstrap-treeview.min.css"/>
+<!-- Application Style -->
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+<div id="map"></div>
+<div id="sidebar">
+    <a href="javascript:void(0);" class="sidebar-toggle"><i class="fa fa-caret-left fa-fw"></i></a>
+    <div class="profile">
+        <img src="assets/images/avatars/avatar1.png" class="avatar" alt="avatar" title="johndoe@example.com"/>
+        <a href="javascript:void(0);">johndoe@example.com <i class="fa fa-caret-down"></i></a>
+    </div>
+    <div class="tabs">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li role="presentation"><a href="#tab-map" aria-controls="tab-map" role="tab" data-toggle="tab">რუკა</a></li>
+            <li role="presentation"><a href="#tab-my-page" aria-controls="tab-my-page" role="tab" data-toggle="tab">ჩემი გვერდი</a></li>
+            <li role="presentation" class="active"><a href="#tab-services" aria-controls="tab-services" role="tab" data-toggle="tab">სერვისები</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane" id="tab-map">
+                <div id="tree"></div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab-my-page"></div>
+            <div role="tabpanel" class="tab-pane active" id="tab-services">
+                <ul class="nav nav-stacked">
+                    <li><a href="javascript:void(0);"><i class="fa fa-angle-double-right fa-fw"></i> საბაზისო რუკა</a></li>
+                    <li><a href="javascript:void(0);"><i class="fa fa-angle-double-right fa-fw"></i> არქიტექტურა</a></li>
+                    <li><a href="javascript:void(0);"><i class="fa fa-angle-double-right fa-fw"></i> გამწვანება</a></li>
+                    <li><a href="javascript:void(0);"><i class="fa fa-angle-double-right fa-fw"></i> ეკოპოლიტიკა</a></li>
+                    <li><a href="javascript:void(0);"><i class="fa fa-angle-double-right fa-fw"></i> ტრანსპორტი</a></li>
+                    <li class="open">
+                        <a href="javascript:void(0);"><i class="fa fa-angle-double-right fa-fw"></i> ქონება</a>
+                        <ul class="nav nav-stacked">
+                            <li class="open">
+                                <a href="javascript:void(0);"><i class="fa fa-angle-double-right fa-fw"></i> ქონების განკარგვა</a>
+                                <ul class="nav nav-pills">
+                                    <li class="hasPopup">
+                                        <a href="javascript:void(0);"><i class="fa fa-edit fa-2x"></i></a>
+                                        <ul class="nav nav-pills">
+                                            <li><a href="javascript:void(0);"><i class="fa fa-map-marker fa-2x fa-fw"></i></a></li>
+                                            <li><a href="javascript:void(0);"><i class="fa fa-map-o fa-2x fa-fw"></i></a></li>
+                                            <li><a href="javascript:void(0);"><i class="fa fa-location-arrow fa-2x fa-fw"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasSearchForm">
+                                        <a href="javascript:void(0);"><i class="fa fa-search fa-2x"></i></a>
+                                        <form>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" title="">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </li>
+                                    <li><a href="javascript:void(0);"><i class="fa fa-link fa-2x"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><i class="fa fa-angle-double-right fa-fw"></i> იჯარა</a>
+                                <ul class="nav nav-pills">
+                                    <li class="hasPopup">
+                                        <a href="javascript:void(0);"><i class="fa fa-edit fa-2x"></i></a>
+                                        <ul class="nav nav-pills">
+                                            <li><a href="javascript:void(0);"><i class="fa fa-map-marker fa-2x fa-fw"></i></a></li>
+                                            <li><a href="javascript:void(0);"><i class="fa fa-map-o fa-2x fa-fw"></i></a></li>
+                                            <li><a href="javascript:void(0);"><i class="fa fa-location-arrow fa-2x fa-fw"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasSearchForm">
+                                        <a href="javascript:void(0);"><i class="fa fa-search fa-2x"></i></a>
+                                        <form>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" title="">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </li>
+                                    <li><a href="javascript:void(0);"><i class="fa fa-link fa-2x"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><i class="fa fa-angle-double-right fa-fw"></i> აუქციონი</a>
+                                <ul class="nav nav-pills">
+                                    <li class="hasPopup">
+                                        <a href="javascript:void(0);"><i class="fa fa-edit fa-2x"></i></a>
+                                        <ul class="nav nav-pills">
+                                            <li><a href="javascript:void(0);"><i class="fa fa-map-marker fa-2x fa-fw"></i></a></li>
+                                            <li><a href="javascript:void(0);"><i class="fa fa-map-o fa-2x fa-fw"></i></a></li>
+                                            <li><a href="javascript:void(0);"><i class="fa fa-location-arrow fa-2x fa-fw"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasSearchForm">
+                                        <a href="javascript:void(0);"><i class="fa fa-search fa-2x"></i></a>
+                                        <form>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" title="">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </li>
+                                    <li><a href="javascript:void(0);"><i class="fa fa-link fa-2x"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><i class="fa fa-angle-double-right fa-fw"></i> ხაზოვანი ნაგებობები</a>
+                                <ul class="nav nav-pills">
+                                    <li class="hasPopup">
+                                        <a href="javascript:void(0);"><i class="fa fa-edit fa-2x"></i></a>
+                                        <ul class="nav nav-pills">
+                                            <li><a href="javascript:void(0);"><i class="fa fa-map-marker fa-2x fa-fw"></i></a></li>
+                                            <li><a href="javascript:void(0);"><i class="fa fa-map-o fa-2x fa-fw"></i></a></li>
+                                            <li><a href="javascript:void(0);"><i class="fa fa-location-arrow fa-2x fa-fw"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasSearchForm">
+                                        <a href="javascript:void(0);"><i class="fa fa-search fa-2x"></i></a>
+                                        <form>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" title="">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </li>
+                                    <li><a href="javascript:void(0);"><i class="fa fa-link fa-2x"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="service-form">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="ტერიტორიის ფართობი ავტომატურად"/>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder=""/>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="დანიშნულება"/>
+    </div>
+    <div class="form-group">
+        <input type="file"/>
+    </div>
+    <div class="form-group">
+        <input type="file"/>
+    </div>
+    <div class="form-group">
+        <input type="file"/>
+    </div>
+    <div class="form-group">
+        <input type="file"/>
+    </div>
+</div>
+<!-- jQuery -->
+<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/bower_components/bootstrap-treeview/src/js/bootstrap-treeview.js"></script>
+<!-- AngularJS -->
+<script src="assets/bower_components/angular/angular.min.js"></script>
+<!-- Google Maps API -->
+<script src="assets/js/google-map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEE_1RFDufcYGssxVtZmjK-cimU_NqFhw&callback=initMap"
+        async defer></script>
+<!-- Application JavaScript -->
+<script src="assets/js/app.js"></script>
+</body>
+</html>

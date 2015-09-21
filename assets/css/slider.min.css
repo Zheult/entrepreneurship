@@ -1,0 +1,150 @@
+/* line 3, C:\Apache24\htdocs\assets\less\slider.less */
+.cropper-container {
+  display: none;
+}
+/* line 7, C:\Apache24\htdocs\assets\less\slider.less */
+.slider {
+  height: 100%;
+  position: relative;
+}
+/* line 11, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .slides-wrapper {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 16, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .slides-wrapper .slide-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 3s;
+  -moz-transition: all 3s;
+  -ms-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+/* line 37, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .slides-wrapper .slide-item.visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+/* line 50, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation {
+  list-style: none;
+  margin: 0;
+  background-color: #b5493a;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: .8;
+}
+/* line 59, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation li {
+  position: relative;
+  width: 14px;
+  height: 14px;
+}
+/* line 64, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation li a {
+  width: 100%;
+  height: 100%;
+  background-color: #dbd5ad;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+/* line 84, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation a:focus,
+.slider .navigation a:hover,
+.slider .navigation li.active a {
+  background-color: #8c3b30;
+  -webkit-box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+}
+/* line 93, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation:not(.navigation-right) {
+  left: 0;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+}
+/* line 99, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation:not(.navigation-right) li {
+  margin: 0 7px;
+  display: inline-block;
+}
+/* line 105, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation.navigation-right {
+  top: 0;
+  padding-top: 80px;
+  width: 114px;
+  line-height: 1;
+}
+/* line 111, C:\Apache24\htdocs\assets\less\slider.less */
+.slider .navigation.navigation-right li {
+  display: block;
+  margin: 20px auto;
+}
+/* line 118, C:\Apache24\htdocs\assets\less\slider.less */
+.slider a.animated-link {
+  width: 54px;
+  height: 54px;
+  background-color: #7f362b;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  border: 6px solid #b84e3f;
+  z-index: 1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-animation: linkBorder 3s infinite;
+  -o-animation: linkBorder 3s infinite;
+  animation: linkBorder 3s infinite;
+}
+@keyframes linkBorder {
+  /* line 145, C:\Apache24\htdocs\assets\less\slider.less */
+  0%,
+  100% {
+    border-width: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  /* line 153, C:\Apache24\htdocs\assets\less\slider.less */
+  50% {
+    border-width: 9px;
+    -webkit-box-shadow: 0 0 0 9px rgba(146, 62, 50, 0.75);
+    -moz-box-shadow: 0 0 0 9px rgba(146, 62, 50, 0.75);
+    box-shadow: 0 0 0 9px rgba(146, 62, 50, 0.75);
+  }
+}
